@@ -19,9 +19,6 @@ mix.setPublicPath('public')
     .version()
 
 
-
-
-
 // aliases so instead of e.g. '../../components/test' we can import files like '@/components/test'
 mix.webpackConfig(webpack => {
     return {

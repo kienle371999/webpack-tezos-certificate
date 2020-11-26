@@ -2742,7 +2742,7 @@ function _asyncToGenerator(fn) { return function () { var self = this, args = ar
               Object.assign(_this.diploma, certificate[0], {
                 'signature': serverRes['value']['0@map']['Signature']
               });
-              baseURL = "https://carthagenet.tzstats.com/";
+              baseURL = undefined;
               url = baseURL.concat(certificate[0].blockchain_hash);
               _this.blockchainDirectory = url;
               _this.dataReady = true;
@@ -2825,7 +2825,7 @@ __webpack_require__.r(__webpack_exports__);
   created: function created() {
     var _this = this;
 
-    var baseURL = "https://carthagenet.tzstats.com/";
+    var baseURL = undefined;
     var url = baseURL.concat(this.contractAddress);
     this.blockchainDirectory = url;
     console.log('1234567', this.contractAddress);
@@ -40967,7 +40967,7 @@ var BlockchainRequest = /*#__PURE__*/function (_BaseRequest) {
   _createClass(BlockchainRequest, [{
     key: "getURL",
     value: function getURL(url) {
-      var baseUrl = "http://127.0.0.1:3800";
+      var baseUrl = undefined;
       return baseUrl.concat(url);
     }
   }, {
@@ -41166,7 +41166,7 @@ var PDFRequest = /*#__PURE__*/function (_BaseRequest) {
   _createClass(PDFRequest, [{
     key: "getURL",
     value: function getURL(url) {
-      var baseUrl = "http://127.0.0.1:7000";
+      var baseUrl = undefined;
       return baseUrl.concat(url);
     }
   }, {
@@ -41262,7 +41262,7 @@ var ServerRequest = /*#__PURE__*/function (_BaseRequest) {
   _createClass(ServerRequest, [{
     key: "getURL",
     value: function getURL(url) {
-      var baseUrl = Object({"VUE_APP_BLOCKCHAIN_URL":"http://127.0.0.1:3800","VUE_APP_TEZOS_URL":"https://carthagenet.tzstats.com/","VUE_APP_PDF_URL":"http://127.0.0.1:7000"}).VUE_APP_SERVER_URL || '';
+      var baseUrl = Object({"VUE_APP_BLOCKCHAIN_URL":undefined,"VUE_APP_TEZOS_URL":undefined,"VUE_APP_PDF_URL":undefined}).VUE_APP_SERVER_URL || '';
       return baseUrl.concat(url);
     }
   }, {
@@ -41588,7 +41588,7 @@ var Authenticator = /*#__PURE__*/function () {
       var _this = this;
 
       return new Promise(function (resolve) {
-        axios__WEBPACK_IMPORTED_MODULE_0___default.a.post("".concat(Object({"VUE_APP_BLOCKCHAIN_URL":"http://127.0.0.1:3800","VUE_APP_TEZOS_URL":"https://carthagenet.tzstats.com/","VUE_APP_PDF_URL":"http://127.0.0.1:7000"}).VUE_APP_SERVER_URL || '', "/api/user/login"), params).then(function (response) {
+        axios__WEBPACK_IMPORTED_MODULE_0___default.a.post("".concat(Object({"VUE_APP_BLOCKCHAIN_URL":undefined,"VUE_APP_TEZOS_URL":undefined,"VUE_APP_PDF_URL":undefined}).VUE_APP_SERVER_URL || '', "/api/user/login"), params).then(function (response) {
           var user = response.data;
           var userData = JSON.stringify(user);
           _this._user = JSON.parse(userData);
@@ -41823,7 +41823,7 @@ var routes = [{
 }];
 var router = new vue_router__WEBPACK_IMPORTED_MODULE_1__["default"]({
   mode: 'history',
-  base: Object({"VUE_APP_BLOCKCHAIN_URL":"http://127.0.0.1:3800","VUE_APP_TEZOS_URL":"https://carthagenet.tzstats.com/","VUE_APP_PDF_URL":"http://127.0.0.1:7000"}).BASE_URL,
+  base: Object({"VUE_APP_BLOCKCHAIN_URL":undefined,"VUE_APP_TEZOS_URL":undefined,"VUE_APP_PDF_URL":undefined}).BASE_URL,
   routes: routes
 });
 router.beforeEach(function (to, from, next) {
@@ -41863,8 +41863,8 @@ router.beforeEach(function (to, from, next) {
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-__webpack_require__(/*! /home/kien/Desktop/webpack-begin/resources/assets/js/main.js */"./resources/assets/js/main.js");
-module.exports = __webpack_require__(/*! /home/kien/Desktop/webpack-begin/resources/assets/sass/admin/app.scss */"./resources/assets/sass/admin/app.scss");
+__webpack_require__(/*! /home/kien/Documents/blockchain-research/webpack-tezos-certificate/resources/assets/js/main.js */"./resources/assets/js/main.js");
+module.exports = __webpack_require__(/*! /home/kien/Documents/blockchain-research/webpack-tezos-certificate/resources/assets/sass/admin/app.scss */"./resources/assets/sass/admin/app.scss");
 
 
 /***/ })
