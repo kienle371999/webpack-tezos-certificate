@@ -72,7 +72,7 @@ export default {
 }
 </script>
 
-<style>
+<style scoped lang="scss">
 .modal-mask {
   font-family: Arial, Helvetica, sans-serif;
   position: fixed;
@@ -120,13 +120,12 @@ export default {
   color: #000000;
   border-radius: 3px;
   padding: 12px 15px;
-  margin-left: 0px;
+  margin-left: 115px;
   margin-bottom: 10px;
   background-color: #f3f4f5;
   border: solid 1px rgba(3,21,50,0.13);
   background: #999999;
   box-sizing: border-box;
-  margin-left: 0px;
   width: 78%;
 }
 .modal-body textarea {
@@ -136,7 +135,7 @@ export default {
   color: #000000;
   border-radius: 3px;
   padding: 12px 15px;
-  margin-left: 0px;
+  margin-left: 115px;
   margin-bottom: 10px;
   background-color: #f3f4f5;
   border: solid 1px rgba(3,21,50,0.13);
@@ -176,6 +175,7 @@ export default {
   font-size: 15px;
   border-radius: 3px;
   cursor: pointer; 
-  margin-left: 5px;
+  margin-left: 5px !important;
+  margin-right: 96px !important;
 }
 </style>

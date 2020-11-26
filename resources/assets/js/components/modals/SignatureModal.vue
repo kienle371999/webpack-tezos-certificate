@@ -60,7 +60,7 @@ export default {
 }
 </script>
 
-<style>
+<style scoped lang="scss">
 .modal-mask {
   font-family: Arial, Helvetica, sans-serif;
   position: fixed;
@@ -80,7 +80,7 @@ export default {
 .modal-container {
   width: 50%;
   margin: 0px auto;
-  padding: 30px 57px 30px 30px;
+  padding: 30px;
   background-color: #fff;
   border-radius: 2px;
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.33);

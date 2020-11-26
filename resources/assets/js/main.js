@@ -3,6 +3,7 @@ import router from './router'
 import App from '@/components/layout/App'
 
 Vue.config.productionTip = false
+require('./helper/init')
 
 
 new Vue({

@@ -51,9 +51,8 @@ export default {
       })
 
       if(result) {
-        while(!localStorage.getItem('user')) 
-        window.EventBus.$emit('SUCCESS', 'Success')
-        this.$router.push('/account')
+        this.redirectToAccount()
+        window.EventBus.$emit('SUCCESS', 'Success') 
       }
     },
     validEmail (email) {
@@ -64,6 +63,9 @@ export default {
       setTimeout(() => {
         this.getDisabled = window.EventBus.$data.disable
       }, 2500);
+    },
+    redirectToAccount() {
+      this.$router.push('/account')
     }
   },
 }

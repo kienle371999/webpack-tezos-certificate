@@ -6,8 +6,8 @@ const Env = use('Env')
 const path = use('path')
 const slug = use('slug')
 const fs = use('fs')
-const rootPath = path.join(__dirname, '../../../../../create-PDF/bin/certificates/')
-const cli = require('../../../../../create-PDF/lib/cli')
+const rootPath = path.join(__dirname, '../../../create-PDF/bin/certificates/')
+const cli = require('../../../create-PDF/lib/cli')
 class PDFController {
     async sendMailToRecipient({ request, response }) {
         const rules = {
@@ -37,6 +37,7 @@ class PDFController {
     createTitle(name) {
         const baseTitle = slug(name).toLowerCase()
         let title = rootPath.concat(baseTitle.concat('.pdf'))
+        console.log("createTitle -> title", title)
 
         console.log('path exits =====>', fs.existsSync(title))
         while(!fs.existsSync(title)) {
